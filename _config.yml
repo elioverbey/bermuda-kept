@@ -1,0 +1,56 @@
+title: "Bermuda Kept"
+tagline: "Bermuda grass, properly kept."
+description: "Bermuda Kept is a membership-only Bermuda grass lawn care service in Garner, NC. Expert mowing, fertilization, and seasonal care for pristine Bermuda lawns in Wake County."
+url: "https://bermudakept.com"
+baseurl: ""
+
+# Business Info
+business:
+  name: "Bermuda Kept"
+  legal_name: "Sambar LLC"
+  email: "elioverbey@gmail.com"
+  phone: ""
+  address: "Garner, NC"
+  service_area: "Garner, NC and surrounding Wake County communities"
+  typeform_url: "https://bermudakept.typeform.com/waitlist"
+
+# SEO
+author: "Bermuda Kept"
+lang: "en"
+locale: "en_US"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /services/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

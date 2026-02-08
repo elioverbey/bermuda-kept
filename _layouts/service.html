@@ -1,0 +1,41 @@
+---
+layout: default
+schema_service: true
+---
+
+<section class="service-hero">
+  <div class="container">
+    <span class="service-label">{{ page.category }}</span>
+    <h1>{{ page.title }}</h1>
+    <p class="service-hero-desc">{{ page.description }}</p>
+  </div>
+</section>
+
+<section class="service-body">
+  <div class="container">
+    <div class="service-content">
+      {{ content }}
+    </div>
+    <aside class="service-sidebar">
+      {% if page.price %}
+      <div class="service-price-card">
+        <span class="price-label">Starting at</span>
+        <span class="price-amount">{{ page.price }}</span>
+        {% if page.price_note %}
+        <span class="price-note">{{ page.price_note }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
+      <a href="{{ site.business.typeform_url }}" target="_blank" rel="noopener" class="btn btn-primary btn-full">Join the Waitlist</a>
+      <p class="sidebar-note">Limited membership. We'll reach out when a spot opens in your area.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="service-cta">
+  <div class="container">
+    <h2>Ready for a lawn that stands apart?</h2>
+    <p>Bermuda Kept is accepting waitlist applications for Garner, NC and surrounding Wake County communities.</p>
+    <a href="{{ site.business.typeform_url }}" target="_blank" rel="noopener" class="btn btn-primary">Apply to the Waitlist</a>
+  </div>
+</section>

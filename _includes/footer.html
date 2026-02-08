@@ -1,0 +1,40 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-mark">BK</span>
+        <span class="logo-text">Bermuda Kept</span>
+        <p class="footer-tagline">{{ site.tagline }}</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/services/' | relative_url }}">Services</a>
+        <a href="{{ '/service-area/' | relative_url }}">Service Area</a>
+        <a href="{{ '/faq/' | relative_url }}">FAQ</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </div>
+      <div class="footer-services">
+        <h4>Services</h4>
+        <a href="{{ '/services/bermuda-mowing-program/' | relative_url }}">Bermuda Mowing Program</a>
+        <a href="{{ '/services/fertilization/' | relative_url }}">Fertilization</a>
+        <a href="{{ '/services/pre-emergent/' | relative_url }}">Pre-Emergent</a>
+        <a href="{{ '/services/mulch-installation/' | relative_url }}">Mulch Installation</a>
+        <a href="{{ '/services/topdressing-and-leveling/' | relative_url }}">Topdressing &amp; Leveling</a>
+        <a href="{{ '/services/irrigation-audit/' | relative_url }}">Irrigation Audit</a>
+      </div>
+      <div class="footer-contact" itemscope itemtype="https://schema.org/LocalBusiness">
+        <h4>Contact</h4>
+        <span itemprop="name" style="display:none;">Bermuda Kept</span>
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Garner</span>, <span itemprop="addressRegion">NC</span>
+        </p>
+        <p><a href="mailto:{{ site.business.email }}" itemprop="email">{{ site.business.email }}</a></p>
+        <p class="footer-legal">Operated by {{ site.business.legal_name }}</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.business.name }}. All rights reserved. A service of {{ site.business.legal_name }}.</p>
+    </div>
+  </div>
+</footer>
